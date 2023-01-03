@@ -1,0 +1,33 @@
+@apiUrl = http://localhost:8000
+
+###
+GET {{apiUrl}}/category
+Content-Type: application/json
+
+###
+GET {{apiUrl}}/products/category/1
+Content-Type: application/json
+
+###
+GET {{apiUrl}}/products/10
+Content-Type: application/json
+
+###
+POST {{apiUrl}}/cart
+Content-Type: application/json
+
+{
+  "product_id": 2
+}
+
+###
+GET {{apiUrl}}/cart/products
+Content-Type: application/json
+
+###
+POST {{apiUrl}}/cart/pay
+Content-Type: application/json
+
+###
+DELETE {{apiUrl}}/cart/products/14
+Content-Type: application/json
